@@ -1,0 +1,45 @@
+header{
+    height: 34px;
+    width: 100%;
+    line-height: 34px;
+    background: #000;
+    font-size: 14px;
+    color: #fff;
+}
+header .app{
+    float: left;
+    width: 100px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+header .weather{
+    width: 200px;
+    float: left;
+
+    line-height: 34px;
+    cursor: pointer;
+    padding-left: 7px;
+
+}
+header .weather .mtest{
+    margin-left: -50px;
+}
+.right{
+    float: right;
+
+}
+.right li{
+    list-style:none;
+    float: left ;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+
+}
+.right .li1{
+    position: relative;
+    background-color: #ED4040;
+    color: #fff;
+    width: 68px;
+    text-align: center;
+}
