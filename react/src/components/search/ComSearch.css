@@ -18,10 +18,11 @@
   width: 280px;
   padding: 0;
   outline: 0;
-  padding: 9px 10px 9px 0;
+  padding: 8px 10px 8px 0;
   background: #f5f6f7;
   box-sizing: border-box;
   float: left;
+  margin-top: 1px;
 }
 
 
