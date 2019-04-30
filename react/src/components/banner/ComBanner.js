@@ -41,26 +41,22 @@ class Banner extends Component {
 
                 {/* 内容 */}
                 < ul className={css.contentUl} >
-                    {(() => {
-                        return content[contentIndex].map((item, indexs) => {
-                            return <li key={indexs} style={index === indexs ? { left: "0" } : {}} className={css.contentLi}>{item}</li>
-                        })
-                    })()}
+                    {content[contentIndex].map((item, indexs) => {
+                        return <li key={indexs} style={index === indexs ? { left: "0" } : {}} className={css.contentLi}>{item}</li>
+                    })}
                 </ul >
 
                 {/* 选项 */}
                 < ul className={css.btnUl} >
-                    {(() => {
-                        return content[contentIndex].map((item, indexs) => {
-                            return <li key={indexs} className={css.btnLi} onClick={() => { this.setState({ index: indexs }) }} >{item}</li>
-                        })
-                    })()}
+                    {content[contentIndex].map((item, indexs) => {
+                        return <li style={index === indexs ? { background: 'red' } : {}} key={indexs} className={css.btnLi} onClick={() => { this.setState({ index: indexs }) }} >{item}</li>
+                    })}
                 </ul >
 
                 {/* 切换 */}
                 <ul>
                     <li onClick={() => { this.setState({ contentIndex: contentIndex > 0 ? --contentIndex : content.length, index: 0 }) }}>上一组</li>
-                    <li onClick={() => { this.setState({ contentIndex: contentIndex < content.length ? ++contentIndex : 0, index: 0 }) }}>下一组</li>
+                    <li onClick={() => { this.setState({ contentIndex: contentIndex < content.length - 1 ? ++contentIndex : 0, index: 0 }) }}>下一组</li>
                 </ul>
 
             </div >)
