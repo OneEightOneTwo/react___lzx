@@ -1,0 +1,43 @@
+.contentUl {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 300px;
+  height: 300px;
+  border: 2px solid red;
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.contentLi {
+  width: 300px;
+  height: 300px;
+  color: aliceblue;
+  background: #000;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.btnUl {
+  float: left;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  width: 60px;
+  height: 300px;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 30px;
+}
+
+.btnLi {
+  background: #000;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+
+}
