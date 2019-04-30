@@ -11,7 +11,6 @@ class Banner extends Component {
             contentIndex: 0,
             index: 0,
             settime: null
-
         }
     }
     tab_index(index) {
@@ -26,14 +25,15 @@ class Banner extends Component {
         if (on_off !== "on") {
             this.setState({
                 settime: setInterval(() => {
-                    if (timeNum >= 3) timeNum = 0
-                    else timeNum++
+                    if (timeNum >= this.state.content[this.state.contentIndex].length - 1) {
+                        timeNum = 0
+                        this.setState({ contentIndex: this.state.contentIndex === this.state.content.length - 1 ? 0 : 1 + this.state.contentIndex })
+                    } else timeNum++
                     this.setState({ index: timeNum })
                 }, 1000)
             })
         }
     }
-
     render() {
         let { index, content, contentIndex } = this.state;
         return (
@@ -59,8 +59,8 @@ class Banner extends Component {
 
                 {/* 切换 */}
                 <ul>
-                    <li onClick={() => { this.setState({ contentIndex: contentIndex > 0 ? --contentIndex : 2, index: 0 }) }}>上一组</li>
-                    <li onClick={() => { this.setState({ contentIndex: contentIndex < 2 ? ++contentIndex : 0, index: 0 }) }}>下一组</li>
+                    <li onClick={() => { this.setState({ contentIndex: contentIndex > 0 ? --contentIndex : content.length, index: 0 }) }}>上一组</li>
+                    <li onClick={() => { this.setState({ contentIndex: contentIndex < content.length ? ++contentIndex : 0, index: 0 }) }}>下一组</li>
                 </ul>
 
             </div >)
