@@ -1,8 +1,6 @@
 import React, { Component } from "React"
-
 //css
 import css from "./ComBanner.css"
-
 class Banner extends Component {
     constructor(props) {
         super(props)
@@ -37,7 +35,7 @@ class Banner extends Component {
     render() {
         let { index, content, contentIndex } = this.state;
         return (
-            <div onMouseEnter={() => { this.timeNum('on') }} onMouseLeave={this.timeNum.bind(this)}  >
+            <div style={{ overflow: "hidden" }} onMouseEnter={() => { this.timeNum('on') }} onMouseLeave={this.timeNum.bind(this)}  >
 
                 {/* 内容 */}
                 < ul className={css.contentUl} >
@@ -55,17 +53,15 @@ class Banner extends Component {
 
                 {/* 切换 */}
                 <ul>
-                    <li onClick={() => { this.setState({ contentIndex: contentIndex > 0 ? --contentIndex : content.length, index: 0 }) }}>上一组</li>
+                    <li onClick={() => { this.setState({ contentIndex: contentIndex > 0 ? --contentIndex : content.length-1, index: 0 }) }}>上一组</li>
                     <li onClick={() => { this.setState({ contentIndex: contentIndex < content.length - 1 ? ++contentIndex : 0, index: 0 }) }}>下一组</li>
                 </ul>
 
             </div >)
     }
-
     componentDidMount() {
         //自动轮播
         this.timeNum()
     }
 }
-
 export default Banner;

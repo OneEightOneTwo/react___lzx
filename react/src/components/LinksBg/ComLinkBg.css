@@ -1,0 +1,15 @@
+.bg {
+  width: 300px;
+  border-top: 2px solid #ed4040;
+  background-color: #f4f5f6;
+  margin-bottom: 16px;
+  padding: 15px 20px 20px;
+}
+.title{
+  color: #222;
+  padding: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  list-style: none;
+}
