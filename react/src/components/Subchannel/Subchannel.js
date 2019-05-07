@@ -1,7 +1,7 @@
-import React from 'react'
+import react from 'react'
 // import { NavBar, Icon } from 'antd-mobile';
 import styles from './Subchannel.css'
-class Subchannel extends React.Component {
+class Subchannel extends react.Component {
     constructor(props) {
         super(props);
         this.state = {

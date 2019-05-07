@@ -1,7 +1,7 @@
-import React from "React";
+import react from "react";
 import css from "./ComSearch.css";
 
-class Search extends React.Component {
+class Search extends react.Component {
     constructor(props) {
         super(props)
         this.state = {

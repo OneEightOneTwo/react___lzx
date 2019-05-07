@@ -1,11 +1,11 @@
-li {
+.item {
     display: list-item;
     text-align: -webkit-match-parent;
     list-style: none;
-    height: 134px;
     width: 660px;
+    overflow: hidden;
 }
-li:hover{
+.item:hover{
     background-color:white; 
     border-bottom: none;
     color:black;

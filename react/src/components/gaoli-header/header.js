@@ -1,6 +1,6 @@
-import React from 'react';
+import react from 'react';
 import css from './header.css';
-class header extends React.Component {
+class header extends react.Component {
   constructor(props) {
     super(props)
     this.state = {

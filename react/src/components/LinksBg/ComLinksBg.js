@@ -1,4 +1,4 @@
-import React from "React"
+import react from "react"
 //css
 import css from "./ComLinkBg.css"
 function LinksBg(porps) {

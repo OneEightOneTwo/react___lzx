@@ -1,11 +1,11 @@
-import React, { Component } from "React"
+import react, { Component } from "react"
 //css
 import css from "./ComBanner.css"
 class Banner extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            content: [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]],//内容
+            content: [['图1', '图2', '图3', '图4'], ['图5', '图6', '图7', '图8'], ['图9', '图10', '图11', '图12']],//内容
             contentIndex: 0, //当前组  第几个内容
             index: 0,// 第几组
             settime: null //定时器
@@ -53,8 +53,8 @@ class Banner extends Component {
 
                 {/* 切换 */}
                 <ul>
-                    <li onClick={() => { this.setState({ contentIndex: contentIndex > 0 ? --contentIndex : content.length-1, index: 0 }) }}>上一组</li>
-                    <li onClick={() => { this.setState({ contentIndex: contentIndex < content.length - 1 ? ++contentIndex : 0, index: 0 }) }}>下一组</li>
+                    <li style={{listStyle:'none'}} onClick={() => { this.setState({ contentIndex: contentIndex > 0 ? --contentIndex : content.length-1, index: 0 }) }}>上一组</li>
+                    <li style={{listStyle:'none'}} onClick={() => { this.setState({ contentIndex: contentIndex < content.length - 1 ? ++contentIndex : 0, index: 0 }) }}>下一组</li>
                 </ul>
 
             </div >)

@@ -32,46 +32,46 @@ class Content extends React.Component {
         console.log(this.state.res.data)
 
         return (
-            <li  className={styles['item']} >
+            <li className={styles['item']} >
                 {this.state.res.data.map((item, index) => {
                     return (
-                        
-                            <div key={index} className={styles['item-inner'] + " " + styles['y-box']}>
-                                <div className={styles['normal'] + " " + styles['rbox']}>
-                                    <div className={styles['rbox-inner']}>
-                                        <div className={styles['title-box']}>
-                                            <a className={styles['title']} target="_blank" href="/group/6685285883916059144/">{item.title}</a>
-                                        </div>
-                                        <div className={styles['footer']}>
+
+                        <div key={index} className={styles['item-inner'] + " " + styles['y-box']}>
+                            <div className={styles['normal'] + " " + styles['rbox']}>
+                                <div className={styles['rbox-inner']}>
+                                    <div className={styles['title-box']}>
+                                        <a className={styles['title']} target="_blank" href="/group/6685285883916059144/">{item.title}</a>
+                                    </div>
+                                    <div className={styles['footer']}>
+                                        <div className={styles['y-left']}>
                                             <div className={styles['y-left']}>
-                                                <div className={styles['y-left']}>
-                                                    <a className={styles['lbtn'] + " " + styles['media-avatar']} target="_blank" href="/c/user/4337783701/">
-                                                        {/* <img alt="" src="">  </img> */}
-                                                    </a>
-                                                    <a className={styles['lbtn'] + " " + styles['source']} target="_blank" href="/c/user/4337783701/">&nbsp;{item.author.loginname}&nbsp;
+                                                <a className={styles['lbtn'] + " " + styles['media-avatar']} target="_blank" href="/c/user/4337783701/">
+                                                    {/* <img alt="" src="">  </img> */}
+                                                </a>
+                                                <a className={styles['lbtn'] + " " + styles['source']} target="_blank" href="/c/user/4337783701/">&nbsp;{item.author.loginname}&nbsp;
                  </a>
-                                                    <a className={styles['lbtn'] + " " + styles['comment']} target="_blank" href="/group/6685285883916059144//#comment_area">&nbsp;评论&nbsp;
+                                                <a className={styles['lbtn'] + " " + styles['comment']} target="_blank" href="/group/6685285883916059144//#comment_area">&nbsp;评论&nbsp;
                   </a>
-                                                </div>
-                                                <span className={styles['lbtn']}>&nbsp;4分钟前</span>
                                             </div>
-                                            <div className={styles['y-right']}>
-                                                <span className={styles['dislike']} data-groupid="6685285883916059144" ga_event="article_dislike_click"> 不感兴趣
+                                            <span className={styles['lbtn']}>&nbsp;4分钟前</span>
+                                        </div>
+                                        <div className={styles['y-right']}>
+                                            <span className={styles['dislike']} data-groupid="6685285883916059144" ga_event="article_dislike_click"> 不感兴趣
                     <i className="y-icon icon-dislikenewfeed"></i>
-                                                </span>
-                                            </div>
+                                            </span>
                                         </div>
                                     </div>
                                 </div>
-                                <div className={styles['lbox']} >
-                                    <a className={styles['img-wrap']} target="_blank" href="/group/6685285883916059144/">
-                                        <img alt="" src={item.author.avatar_url} /> 
-                                    </a>
-                                </div>
                             </div>
+                            <div className={styles['lbox']} >
+                                <a className={styles['img-wrap']} target="_blank" href="/group/6685285883916059144/">
+                                    <img alt="" src={item.author.avatar_url} />
+                                </a>
+                            </div>
+                        </div>
                     )
                 })}
-                </li>
+            </li>
 
 
         )

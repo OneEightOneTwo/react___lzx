@@ -24,12 +24,11 @@
     color: #444;
     margin-left: 33px;
     background: #fff;
-}
-li {
     list-style: none;
     border-radius: 0px;
 }
-li:hover{
+
+.sub-item:hover{
     border-bottom: 2px solid red;
     border-radius: 0px;
 }
