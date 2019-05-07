@@ -27,6 +27,7 @@ line-height: 34px;
     width: 320px;
     position: absolute;
     z-index: 1;
+    margin-top: -10px;
 }
 .right{
     float: right;
