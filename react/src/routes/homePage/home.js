@@ -1,4 +1,5 @@
 import react from "react";
+import { hashHistory } from 'dva/router';
 //搜索组件(search)
 import Search from "../../components/search/ComSearch";
 //轮播图组件
@@ -9,7 +10,8 @@ import LinksBg from "../../components/LinksBg/ComLinksBg";
 import MoreNav from "../../components/moreNav/ComMoreNav";
 //侧栏图文组件
 import ImgText from "../../components/ImgText/ComImgText";
-
+//css
+import css from './home.css'
 import Top from '../../components/gaoli-gotop/gotop'
 import Header from '../../components/gaoli-header/header'
 
@@ -56,15 +58,19 @@ function Home() {
             img: "//p1.pstatp.com/list/240x240/pgc-image/78a128742df144a09a51daf26563835e",
             text: '巴黎圣母院被各城市撤回捐款，特朗普慷慨引美国民众愤怒'
         }
-    ]
+    ];
+    //路由跳转
     return (
         <div>
-            <Header />
+            <div className={css.H_header}>
+                <Header />
+            </div>
+
             <Top />
             {/* <br /><br /> <br /> <br /> <br /> <br /> */}
 
             <Search />
-            <Search type="blue" />
+            <Search type="blue" /><br />
             <Banner />
             <LinksBg con={{ com: MoreNav, data: GdList, title: '更多' }} />
             <LinksBg con={{ com: MoreNav, data: YqljList, title: '友情链接' }} />
@@ -77,6 +83,8 @@ function Home() {
             <Subchannel />
             <br /><br />
             <Content />
+
+
 
         </div>
     )
