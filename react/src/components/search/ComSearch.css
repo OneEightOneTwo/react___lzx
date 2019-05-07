@@ -1,0 +1,51 @@
+.searchBox {
+  height: 40px;
+  position: relative;
+  border: 1px solid #e8e8e8;
+  padding: 0 14px;
+  background-color: #f5f6f7;
+  border-radius: 4px;
+  width: 340px;
+  box-sizing: border-box;
+  line-height: 38px;
+}
+
+.inputText {
+  border: 0;
+  color: #444;
+  font-size: 14px;
+  line-height: 20px;
+  width: 280px;
+  padding: 0;
+  outline: 0;
+  padding: 8px 10px 8px 0;
+  background: #f5f6f7;
+  box-sizing: border-box;
+  float: left;
+  margin-top: 1px;
+}
+
+
+.inputBtn {
+  background: url(../../assets/search/search-icon.png) center no-repeat;
+  background-size: 100%;
+  width: 16px;
+  height: 100%;
+  float: right;
+  cursor: pointer;
+}
+
+.inputBtnBlue {
+  display: inline-block;
+  width: 80px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 0 4px 4px 0;
+  background-color: #208eda;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  text-align: center;
+}

@@ -1,0 +1,18 @@
+.ul{
+    overflow: hidden;
+    padding:0;
+    margin:0;
+}
+
+.item{
+    list-style: none;
+    float: left;
+    margin: 0 15px 20px 0;
+    color: #777;
+    line-height: 1.4;
+    font-size: 14px;
+    cursor: pointer;
+}
+.item:hover{
+    color: rgb(73, 73, 73);
+}
