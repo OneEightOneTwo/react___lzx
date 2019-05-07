@@ -1,0 +1,135 @@
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: none;
+    height: 134px;
+    width: 660px;
+}
+li:hover{
+    background-color:white; 
+    border-bottom: none;
+    color:black;
+}
+.item-inner {
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px solid #e8e8e8;
+    height: 113px;
+    width: 660px;
+}
+.rbox {
+    float: right;
+    height: 102px;
+    width: 480px;
+}
+.normal {
+    position: relative;
+    overflow: hidden;
+    padding-top: 18px;
+}
+.lbox {
+    position: relative;
+    top:-4px;
+    float: left;
+}
+.rbox-inner {
+    display: inline-block;
+    width: 100%;
+    vertical-align: middle;
+}
+.title-box {
+    display: block;
+    font-size: 20px;
+    color: #000042;
+    line-height: 1.3;
+    margin-bottom: 4px;
+    font-weight: 700;
+    max-height: 52px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.title:hover{
+    color:black;
+}
+.footer {
+    font-size: 12px;
+    color: #999;
+    height: 18px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+.footer:hover{
+    color:red;
+}
+.y-left {
+    float: left;
+}
+.media-avatar {
+    position: relative;
+    color: #fff;
+    margin-right: 2px;
+    width: 18px;
+    height: 18px;
+    line-height: 17px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50%;
+    background-color: #eee;
+    overflow: hidden;
+}
+.lbtn {
+    float: left;
+    display: inline-block;
+    color: #777;
+    font-size: 14px;
+}
+.source:hover{
+    color: #777;
+}
+.comment:hover{
+    color: #777;
+}
+.y-right {
+    float: right;
+}
+.dislike {
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 2px;
+    text-align: center;
+    background-color: #fff;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.dislike i {
+    font-size: 16px;
+    color: #ddd;
+    top: 2px;
+}
+.lbox {
+    position: relative;
+    float: left;
+}
+.lbox .img-wrap {
+    display: block;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    overflow: hidden;
+    margin-left: 17px;
+}
+.img-wrap>img {
+    /* max-width: 100%; */
+    height: auto;
+    /* vertical-align: middle; */
+    width: 120px;
+    height: 120px;
+}
+/* .img-wrap img {
+    -webkit-transition: all .5s ease-out .1s;
+    transition: all .5s ease-out .1s;
+} */
