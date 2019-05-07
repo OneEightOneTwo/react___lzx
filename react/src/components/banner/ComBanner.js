@@ -47,7 +47,7 @@ class Banner extends Component {
                 {/* 选项 */}
                 < ul className={css.btnUl} >
                     {content[contentIndex].map((item, indexs) => {
-                        return <li style={index === indexs ? { background: 'red' } : {}} key={indexs} className={css.btnLi} onClick={() => { this.setState({ index: indexs }) }} >{item}</li>
+                        return <li style={index === indexs ? { background: 'red' } : {}} key={indexs} className={css.btnLi} onMouseEnter={() => { this.setState({ index: indexs }) }} >{item}</li>
                     })}
                 </ul >
 
