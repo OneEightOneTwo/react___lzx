@@ -5,10 +5,10 @@ class Banner extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            content: [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]],
-            contentIndex: 0,
-            index: 0,
-            settime: null
+            content: [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]],//内容
+            contentIndex: 0, //当前组  第几个内容
+            index: 0,// 第几组
+            settime: null //定时器
         }
     }
     tab_index(index) {
@@ -60,7 +60,7 @@ class Banner extends Component {
             </div >)
     }
     componentDidMount() {
-        //自动轮播
+        //初始自动轮播
         this.timeNum()
     }
 }
