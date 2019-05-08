@@ -1,5 +1,5 @@
 import react from 'react'
-import { Link } from 'dva/router';
+// import { Link } from 'dva/router';
 import styles from './Subchannel.css'
 class Subchannel extends react.Component {
     constructor(props) {

@@ -9,6 +9,8 @@
     background: #fff;
     height: 38px;
     border-bottom: 2px solid #f2f2f2;
+    margin:0;
+    
 }
 .subchannel .sub-item:first-child {
     margin-left: 0!important;

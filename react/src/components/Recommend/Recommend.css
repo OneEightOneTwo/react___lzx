@@ -61,6 +61,7 @@ ul, menu, dir {
     color: white;
 }
 .wchannel-item {
+    font-size: 16px;
     /* float: left; */
     display: block;
     width: 110px;

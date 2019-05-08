@@ -2,3 +2,23 @@ body{
     margin: 0;
     padding:0;
 }
+.H_header{
+    margin-bottom:20px;
+}
+.H_cantainer{
+    margin:0 auto;
+    width:1170px;
+}
+.H_left{
+    float: left;
+    width: 110px;
+    margin-right: 30px;
+}
+.H_center{
+    float: left;
+    width: 660px;
+}
+.H_right{
+    float: right;
+    width: 340px;
+}

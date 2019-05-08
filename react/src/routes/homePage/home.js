@@ -65,8 +65,24 @@ function Home() {
             <div className={css.H_header}>
                 <Header />
             </div>
+            <div className={css.H_cantainer}>
+                <div className={css.H_left}>
+                    <Recommend />
+                </div>
+                <div className={css.H_center}>
+                    <Subchannel />
+                    <Content />
+                </div>
+                <div className={css.H_right}>
+                    <Search /><br />
 
-            <Top />
+                    <LinksBg con={{ com: ImgText, data: imgtext, title: '24小时热闻' }} />
+                    <LinksBg con={{ com: MoreNav, data: GdList, title: '更多' }} />
+                    <LinksBg con={{ com: MoreNav, data: YqljList, title: '友情链接' }} />
+                    <LinksBg con={{ com: MoreNav, data: NrList }} />
+                </div>
+            </div>
+            {/* <Top />
             <br /><br /> <br /> <br /> <br /> <br />
 
             <Search />
@@ -82,7 +98,7 @@ function Home() {
             <Recommend />
             <Subchannel />
             <br /><br />
-            <Content />
+            <Content /> */}
 
 
 
