@@ -75,33 +75,14 @@ function Home() {
                 </div>
                 <div className={css.H_right}>
                     <Search /><br />
-
+                    <Banner />
                     <LinksBg con={{ com: ImgText, data: imgtext, title: '24小时热闻' }} />
                     <LinksBg con={{ com: MoreNav, data: GdList, title: '更多' }} />
                     <LinksBg con={{ com: MoreNav, data: YqljList, title: '友情链接' }} />
                     <LinksBg con={{ com: MoreNav, data: NrList }} />
                 </div>
             </div>
-            {/* <Top />
-            <br /><br /> <br /> <br /> <br /> <br />
-
-            <Search />
-            <Search type="blue" /><br />
-            <Banner />
-            <LinksBg con={{ com: MoreNav, data: GdList, title: '更多' }} />
-            <LinksBg con={{ com: MoreNav, data: YqljList, title: '友情链接' }} />
-            <LinksBg con={{ com: MoreNav, data: NrList }} />
-            <LinksBg con={{ com: ImgText, data: imgtext, title: '24小时热闻' }} />
-
-
-
-            <Recommend />
-            <Subchannel />
-            <br /><br />
-            <Content /> */}
-
-
-
+            <Top />
         </div>
     )
 }

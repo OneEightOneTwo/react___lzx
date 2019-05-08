@@ -1,34 +1,48 @@
-header{
+.header{
     height: 34px;
     width: 100%;
-    line-height: 34px;
+line-height: 34px;
     background: #000;
     font-size: 14px;
     color: #fff;
+
 }
-header .app{
+.header .app{
     float: left;
     width: 100px;
     padding-left: 10px;
     cursor: pointer;
 }
-header .weather{
+.header .weather{
     width: 200px;
     float: left;
-
+    height: 100%;
     line-height: 34px;
     cursor: pointer;
     padding-left: 7px;
 
 }
-header .weather .mtest{
+.header .weather .mtest{
     margin-left: -50px;
+    width: 320px;
+    position: absolute;
+    z-index: 1;
+    margin-top: -10px;
 }
 .right{
     float: right;
+height: 100%;
 
 }
+.headerli{
+    float: left;
+    overflow: hidden;
+    margin-top: 0px;
+}
 .right li{
+    list-style:none;
+}
+.right .lis{
     list-style:none;
     float: left ;
     margin-left: 20px;
@@ -37,9 +51,12 @@ header .weather .mtest{
 
 }
 .right .li1{
+    float: left ;
     position: relative;
     background-color: #ED4040;
     color: #fff;
     width: 68px;
     text-align: center;
+
+
 }
